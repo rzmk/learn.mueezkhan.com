@@ -74,7 +74,11 @@ const config: DocsThemeConfig = {
         />
         <meta
           property="og:image"
-          content={frontMatter.image || "/og-image.png"}
+          content={
+            (frontMatter.image &&
+              `https://learn.mueezkhan.com${frontMatter.image}`) ||
+            "/og-image.png"
+          }
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="theme-color" content="#11191f"></meta>
