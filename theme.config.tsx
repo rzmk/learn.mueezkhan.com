@@ -77,7 +77,7 @@ const config: DocsThemeConfig = {
           content={
             (frontMatter.image &&
               `https://learn.mueezkhan.com${frontMatter.image}`) ||
-            "/og-image.png"
+            "https://learn.mueezkhan.com/og-image.png"
           }
         />
         <meta name="twitter:card" content="summary_large_image" />
