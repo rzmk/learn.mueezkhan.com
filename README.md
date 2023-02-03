@@ -7,7 +7,7 @@
   </h1>
 </div>
 
-![A banner for the website](/public/og-image.png)
+![A banner for the website](/public/index.png)
 
 ## Details
 
