@@ -24,9 +24,9 @@ const Card = ({
 }: CardProps) => {
   return (
     <a href={link} target={newTab ? "_blank" : "_self"} rel="noreferrer">
-      <div className="flex flex-col bg-white rounded-lg shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900 mb-4">
+      <div className="mb-4 flex flex-col rounded-lg bg-white shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900">
         {/* Image */}
-        <div className="relative w-full md:w-full h-full md:h-full flex-1 p-24">
+        <div className="relative h-full w-full flex-1 p-24 md:h-full md:w-full">
           <Image
             src={imgSrc}
             alt={imgAlt}
@@ -34,12 +34,12 @@ const Card = ({
             sizes="(max-width: 768px) 25%,
             (max-width: 1200px) 50%,
             75%"
-            className="transition ease-in-out duration-200 hover:brightness-105 flex absolute inset-0 object-cover w-full h-full rounded-lg"
+            className="absolute inset-0 flex h-full w-full rounded-lg object-cover transition duration-200 ease-in-out hover:brightness-105"
             priority={priority}
           />
         </div>
         {/* Text */}
-        <div className="p-4 flex-1">
+        <div className="flex-1 p-4">
           <h1 className="flex text-lg font-semibold dark:text-gray-50">
             {name}
           </h1>
@@ -49,9 +49,9 @@ const Card = ({
         </div>
         {/* Tags (if given) */}
         {tags && (
-          <div className="card-tags ml-4 mr-4 mt-0 mb-4 flex flex-wrap gap-2">
+          <div className="ml-4 mr-4 mt-0 mb-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span className="bg-zinc-200 dark:bg-zinc-700 rounded-lg px-2 mr-2">
+              <span className="mr-2 rounded-lg bg-zinc-200 px-2 dark:bg-zinc-700">
                 {tag}
               </span>
             ))}
