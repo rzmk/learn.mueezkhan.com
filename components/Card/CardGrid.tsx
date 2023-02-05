@@ -19,6 +19,7 @@ const CardGrid = ({ resources }: CardGridProps) => {
           priority={index < 2}
           newTab={resource.newTab}
           tags={resource.tags}
+          buttons={resource.buttons}
         />
       ))}
     </div>

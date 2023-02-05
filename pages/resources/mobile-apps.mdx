@@ -1,0 +1,59 @@
+---
+title: 📱 Mobile Apps - Resources
+description: Mobile apps that can help you and help others. From search engines that plant trees to helping hard-of-sight people read, there's an app for that.
+image: /resources/mobile-apps/using-phone.jpg
+---
+
+import CardGrid from "../../components/Card/CardGrid.tsx";
+
+# 📱 Mobile Apps
+
+Mobile apps that can help you and help others. Assisting people with disabilities and more at your fingertips.
+
+---
+
+<CardGrid
+  resources={[
+    {
+      name: "Be My Eyes",
+      description:
+        "An app that connects blind and low-vision people with sighted volunteers for assistance through a live video call",
+      link: "https://www.bemyeyes.com",
+      imgSrc: "/resources/mobile-apps/be-my-eyes.jpeg",
+      imgAlt:
+        "Hand-held iPhone with the Be My Eyes app presenting blind user's home screen with two buttons: 'Call first available volunteer' and 'Specialized Help'.",
+      buttons: [
+        {
+          text: "iOS",
+          link: "https://apps.apple.com/app/apple-store/id905177575",
+          color: "ios",
+        },
+        {
+          text: "Android",
+          link: "https://play.google.com/store/apps/details?id=com.bemyeyes.bemyeyes",
+          color: "android",
+        },
+      ],
+    },
+    {
+      name: "Ecosia",
+      description:
+        "Plant trees by searching the web on a private search engine, an alternative to your Google search",
+      link: "https://www.ecosia.org/",
+      imgSrc: "/resources/mobile-apps/ecosia.jpg",
+      imgAlt: "A photograph of a person with gloves planting trees",
+      buttons: [
+        {
+          text: "iOS",
+          link: "https://apps.apple.com/app/apple-store/id670881887",
+          color: "ios",
+        },
+        {
+          text: "Android",
+          link: "https://play.google.com/store/apps/details?id=com.ecosia.android",
+          color: "android",
+        },
+      ],
+    },
+  ]}
+/>
