@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import CardButton from "./CardButton";
 import CardTag from "./CardTag";
+import Link from "next/link";
 
 type CardProps = {
   name: string;
@@ -34,7 +35,7 @@ const Card = ({
   return (
     <div className="mb-4 flex h-min flex-col rounded-lg bg-white shadow-md transition ease-in-out hover:shadow-2xl dark:bg-zinc-900">
       {/* Image */}
-      <a href={link} target={newTab ? "_blank" : "_self"} rel="noreferrer">
+      <Link href={link} target={newTab ? "_blank" : "_self"} rel="noreferrer">
         <div className="relative h-full w-full flex-1 p-24 md:h-full md:w-full">
           <Image
             src={imgSrc}
@@ -47,7 +48,7 @@ const Card = ({
             priority={priority}
           />
         </div>
-      </a>
+      </Link>
       {/* Text */}
       <div className="flex-shrink p-4">
         <h1 className="flex text-lg font-semibold dark:text-gray-50">{name}</h1>
@@ -77,6 +78,14 @@ const Card = ({
           ))}
         </div>
       )}
+      <div className="mb-2 flex flex-row justify-center">
+        <CardButton
+          text="Click here to view &#10132;"
+          color="view"
+          link={link}
+          newTab={newTab}
+        />
+      </div>
     </div>
   );
 };

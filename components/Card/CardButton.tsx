@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 type CardButtonProps = {
   text: string;
@@ -12,6 +13,7 @@ const getButtonColor = (color: string) => {
   const buttonColors = {
     ios: "#94A3B8",
     android: "#34D399",
+    view: "#3B82F6",
   };
 
   return buttonColors[color] ?? color;
@@ -32,11 +34,11 @@ const CardButton = ({ text, link, color, newTab }: CardButtonProps) => {
   };
 
   return (
-    <a
+    <Link
       href={link}
       target={newTab ? "_blank" : "_self"}
       rel="noreferrer"
-      className="ease focus:shadow-outline m-2 inline-block select-none rounded-md border px-4 py-2 text-black transition duration-500 focus:outline-none dark:text-white"
+      className="ease focus:shadow-outline mx-2 mb-2 inline-block select-none rounded-md border px-4 py-2 text-black transition duration-500 focus:outline-none dark:text-white"
       role="button"
       style={{
         borderColor: buttonColor,
@@ -45,7 +47,7 @@ const CardButton = ({ text, link, color, newTab }: CardButtonProps) => {
       onMouseLeave={handleMouseLeave}
     >
       {text}
-    </a>
+    </Link>
   );
 };
 
