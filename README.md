@@ -1,7 +1,7 @@
 <div align="center">
   <h1>
     <a
-      href="https://learn.mueezkhan.com" target="_blank" rel="noreferrer">
+      href="https://learn.mueezkhan.com" rel="noreferrer">
       learn.mueezkhan.com
     </a>
   </h1>
@@ -13,7 +13,7 @@
 
 This is the code repository for [https://learn.mueezkhan.com](https://learn.mueezkhan.com).
 
-Built with [Nextra](https://nextra.site) and [TailwindCSS](https://tailwindcss.com/).
+Built with [Nextra](https://nextra.site) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Installation
 

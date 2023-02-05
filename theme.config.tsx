@@ -27,10 +27,7 @@ const config: DocsThemeConfig = {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{" "}
-        <a href="https://learn.mueezkhan.com" target="_blank">
-          Mueez Khan
-        </a>
-        .
+        <a href="https://mueezkhan.com">Mueez Khan</a>.
       </span>
     ),
   },
