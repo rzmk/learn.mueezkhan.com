@@ -19,9 +19,6 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/rzmk/learn.mueezkhan.com",
   },
-  chat: {
-    link: "https://discord.com/servers/learn-with-mueez-1068446943736516678",
-  },
   docsRepositoryBase: "https://github.com/rzmk/learn.mueezkhan.com",
   footer: {
     text: (
